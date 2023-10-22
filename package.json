@@ -1,14 +1,18 @@
 {
-  "name": "ngx-howler",
+  "name": "@elysiummp/ngx-howler",
   "description": "Audio library based on howler.js for Angular",
-  "version": "11.0.0",
+  "version": "1.0.0",
+  "author": "elysium-mp",
   "peerDependencies": {
-    "@angular/common": "^11.0.0",
-    "@angular/core": "^11.0.0"
+    "@angular/common": "^16.2.10",
+    "@angular/core": "^16.2.10",
+    "@types/howler": "^2.2.10"
+  },
+  "scripts": {
+    "build": "ng build ngx-howler"
   },
   "dependencies": {
-    "@angular/cli": "^16.2.7",
-    "@types/howler": "^2.2.1",
+    "rxjs": "^7.8.1",
     "tslib": "^2.0.0"
   },
   "keywords": [
@@ -16,17 +20,24 @@
     "howler",
     "ngx-howler"
   ],
-  "author": {
-    "name": "kain",
-    "email": "zhangtqx@vip.qq.com"
-  },
   "license": "MIT",
-  "homepage": "https://github.com/kainonly/ngx-howler",
+  "homepage": "https://github.com/elysium-mp/ngx-howler",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kainonly/ngx-howler.git"
+    "url": "git+https://github.com/elysium-mp/ngx-howler"
   },
   "bugs": {
-    "url": "https://github.com/kainonly/ngx-howler/issues"
+    "url": "https://github.com/elysium-mp/ngx-howler/issues"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "16.2.1",
+    "@angular/cli": "16.2.7",
+    "@angular/compiler": "16.2.10",
+    "@angular/compiler-cli": "16.2.10",
+    "ng-packagr": "^16.2.3",
+    "typescript": "~5.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
